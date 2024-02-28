@@ -1,0 +1,87 @@
+
+.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+  --box-shadow: #0000001a;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  --bg-color: #000;
+  --text-color: #fff;
+  --box-shadow: #ffffff3a;
+}
+
+.eyes{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye{
+  width: 18px;
+  height: 18px;
+  background: var(--bg-color);
+  display: inline-block;
+  margin: 2px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball{
+  width: 8px;
+  height: 8px;
+  background: var(--text-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  border-radius: 50%;
+}
+
+.mini-ball{
+  width: 4px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  border-radius: 50%;
+}
+
+
+.container{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.lips{
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  width: 20px;
+  height: 20px;
+  background: var(--bg-color);
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  rotate: 0deg;
+  border-bottom: 3px solid var(--text-color);
+}
+
+.container:hover{
+
+  .lips{
+   rotate: -15deg;
+}
+
+
+}

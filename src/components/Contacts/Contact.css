@@ -1,0 +1,262 @@
+
+.light-mode {
+  --bg-color: #fff;
+  --text-color: #222;
+  --box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode {
+  --bg-color: #222;
+  --text-color: #fff;
+  --box-shadow: rgba(255, 255, 255, 0.4);
+}
+
+.contact-info{
+  margin-bottom: 50px;
+}
+
+.contact-info h1{
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+
+.contact-info p{
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 10px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-info h3{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+}
+
+.meassge{
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+  padding: 0 15px;
+
+}
+
+ .email{
+  text-align: center;
+  border-radius: 10px;
+  padding: 25px 5px;
+  box-shadow: 0 0 10px var(--box-shadow);
+ }
+ 
+ .email h2{
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
+ 
+ .email i{
+   margin-right: 8px;
+ }
+ 
+ 
+ .email a{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   text-align: center;
+   font-size: 16px;
+   text-decoration: none;
+   color: var(--text-color);
+ }
+ 
+ .email a:hover{
+  color: var(--text-color);
+ }
+
+
+ @media screen and (min-width: 450px) {
+  .contact-info{
+    padding: 0 10px;
+  }
+ }
+
+ 
+ @media screen and (min-width: 600px) {
+  .contact-info{
+    padding: 0 60px;
+  }
+ }
+
+ @media screen and (min-width: 600px) {
+  .contact-info{
+    padding: 0 60px;
+  }
+ }
+
+ @media screen and (min-width: 600px) {
+  .contact-info{
+    padding: 0 60px;
+  }
+ }
+
+ @media screen and (min-width: 768px) {
+
+  .contact-info{
+    padding: 0 90px;
+  }
+
+  .meassge{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  
+  }
+ }
+
+
+ @media screen and (min-width: 992px) {
+
+  .contact-info{
+    padding: 0 50px;
+  }
+
+  .meassge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  
+  }
+ }
+
+ br{
+   display: block;
+ }
+
+
+ @media screen and (min-width: 992px) {
+
+  .contact-info{
+    padding: 0 110px;
+    margin-bottom: 70px;
+  }
+ }
+
+/*
+
+.contact-info{
+  margin: 0px 170px  30px 170px;
+  padding: 40px 40px;
+}
+
+.contact-info h3{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.contact-info h1{
+  text-align: center;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+.contact-info p {
+  text-align: center;
+  font-size: 20px;
+  padding: 0 50px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.meassge{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 25px;
+  gap: 25px;
+}
+
+.email:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.email{
+ text-align: center;
+ border-radius: 10px;
+ padding: 25px 25px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.email h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.email i{
+  margin-right: 10px;
+}
+
+
+.email a{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.email a:hover{
+ color: #000;
+}
+
+.social{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.social-id:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.social-id{
+ text-align: center;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ border-radius: 10px;
+ padding: 25px 25px;
+}
+
+.social-id h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.social-id i{
+  margin-right: 10px;
+}
+
+.social-id a{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.social-id a:hover{
+ color: #000;
+}
+
+*/
+

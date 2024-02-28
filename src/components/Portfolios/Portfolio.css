@@ -1,0 +1,286 @@
+.light-mode {
+  --bg-color: #fff;
+  --text-color: #222;
+  --box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode styles */
+.dark-mode {
+  --bg-color: #222;
+  --text-color: #fff;
+  --box-shadow: rgba(255, 255, 255, 0.4);
+}
+
+.portfolio{
+  padding: 10px 15px;
+  margin-bottom: 50px;
+}
+
+.portfolio h1{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.project1{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  padding: 30px 10px;
+  box-shadow: 0 0 12px var(--box-shadow);
+  margin-bottom: 30px;
+}
+
+
+.project1 .project-image{
+  box-shadow: 0 0 10px var(--box-shadow);
+  border-radius: 20px;
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  border-radius: 20px;
+}
+
+.project1 .img-up{
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 10s;
+}
+
+.project1 .img-up:hover{
+  background-position: bottom;
+}
+
+.project-info h2{
+ font-size: 22px;
+ text-align: center;
+ padding: 15px 0 10px;
+ font-family: 'Poppins', sans-serif;
+}
+
+.project-info p{
+  font-size: 17px;
+  padding: 0 5px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.project-info .tech-item{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.project-info .tech-item span{
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.code-btn {
+  text-align: center;
+  padding: 10px 0 20px;
+}
+
+.code-btn button{
+  padding: 10px 16px;
+  font-size: 17px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.code-btn button:hover{
+  scale: 1.1;
+}
+
+.code-btn button i{
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 450px) {
+  .portfolio{
+    padding: 0 20px;
+  }
+  .project1{
+    padding: 15px 15px 0px;
+  }
+ }
+
+
+ @media screen and (min-width: 600px) {
+  .portfolio{
+    padding: 0 70px;
+  }
+  .project1{
+    padding: 20px 20px 0px;
+  }
+ }
+
+ 
+ @media screen and (min-width: 768px) {
+  .portfolio{
+    padding: 0 100px;
+  }
+ }
+
+ @media screen and (min-width:992px) {
+
+  .portfolio{
+    padding: 0 50px;
+  }
+  .project1{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px 0;
+  }
+
+  .project-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project1 .project-image{
+    max-width:560px;
+    height: 360px;
+    box-shadow: 0 0 5px var(--box-shadow);
+    border-radius: 20px;
+  }
+  .project1{
+    padding: 20px 20px;
+  }
+
+  .project-info p{
+    text-align: center;
+  }
+  .code-btn{
+    text-align: center;
+  }
+ }
+
+ @media screen and (min-width: 1100px) {
+  .portfolio{
+    padding: 0 120px;
+    margin-bottom: 70px;
+  }
+  
+}
+
+
+
+
+
+
+/*.portfolio{
+  margin: 30px 165px  30px 175px;
+  padding: 40px 40px;
+}
+
+
+.portfolio h1{
+  text-align: center;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+}
+
+
+.project1{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  padding: 30px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+}
+
+.project2{
+  flex-direction: row-reverse;
+}
+
+.project1 .project-image{
+  flex-basis: 55%;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  width: 640px;
+  height: 360px;
+  transition: ease-in-out 10s;
+}
+
+.project1 .img-up{
+  background-image: url(/src/assets/images/project.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+
+.img-up:hover{
+  background-position: bottom;
+}
+
+.project-info{
+  flex-basis: 35%;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.project-info h2{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+.project-info p{
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.tech-item span{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  font-style:italic;
+}
+
+.code-btn button{
+  padding: 10px 16px;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 17px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+}
+
+.code-btn button:hover{
+  transform: scale(1.1);
+}
+
+.code-btn button i{
+  margin-right: 10px;
+}
+
+
+*/

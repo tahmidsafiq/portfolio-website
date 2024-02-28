@@ -1,0 +1,35 @@
+import React, { useState } from 'react';
+import '../Headers/header.css';
+
+const Header = ({ darkMode, toggleDarkMode }) => {
+
+  const [imageSrc, setImageSrc] = useState('/src/assets/images/profile.jpg');
+
+  const handleImageClick = () => {
+    const newImageSrc = imageSrc === '/src/assets/images/profile.jpg' ? '/src/assets/images/colorFull.png' : '/src/assets/images/profile.jpg';
+    setImageSrc(newImageSrc);
+  };
+
+  return (
+    <header>
+      <div className='profile-pic'>
+        <img id='phofileImg' src={imageSrc} alt="Profile" />
+      </div>
+      <div className='profile-info'>
+        <h6 id='experience'>Hi, I'm</h6>
+        <h1>Tahmid Safiq</h1>
+        <h5>Front-end <span style={{cursor:'pointer'}} onClick={handleImageClick}>developer</span></h5>
+        <p>
+          Now, my life is looking like this website black & white. <br />
+          And Only <span style={{cursor:'pointer'}} onClick={handleImageClick}>developer</span> can make it colorful.
+        </p>
+        <div className='mobile-btn'>
+          <button className='cv-btn'>Download CV</button>
+          <a href='https://wa.me/8801793372099' className='hire-btn'><i className="fa-solid fa-laptop-code"></i>Hire Me</a>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

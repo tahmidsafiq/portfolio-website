@@ -1,0 +1,451 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.light-mode {
+  --bg-color: #fff;
+  --text-color: #222;
+  --box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode styles */
+.dark-mode {
+  --bg-color: #222;
+  --text-color: #fff;
+  --box-shadow: rgba(255, 255, 255, 0.4);
+}
+
+.color-mode {
+  --bg-color: crimson;
+  --text-color: #fff;
+  --box-shadow: rgba(117, 52, 52, 0.4);
+}
+
+
+
+nav{
+  display: flex;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  color: var(--text-color);
+  z-index: 3;
+  background: var(--bg-color);
+  box-shadow: 0 0 5px var(--box-shadow);
+}
+
+nav  i{
+  font-size: 35px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  padding-right: 60px;
+  color: var(--text-color);
+}
+
+.nav-link{
+  display: none;
+}
+
+.linkbar{
+  margin: 1rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 2px
+}
+
+.linkbar:hover{
+  border-bottom: 3px solid var(--text-color);
+  padding-bottom: 2px;
+}
+
+.contact{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  overflow: hidden;
+  left: 30px;
+  padding: 20px 0;
+  background-color: var(--bg-color);
+  transition: 0.2s;
+  width: auto;
+  border: 2px solid var(--text-color);
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.mobile-menu li{
+  padding: 6px 0px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+}
+
+.logo h1{
+  display: none;
+  font-size: 30px;
+  margin-left: 10px ;
+}
+
+.mobile-menu a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.mobile-menu a:hover{
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.active{
+  border-bottom: 3px solid var(--text-color);
+  padding-bottom: 2px;
+}
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--text-color);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu{
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  padding: 10px 10px;
+
+}
+
+.show-menu{
+  display: block;
+}
+
+.darkmodebtn{
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  color: var(--text-color);
+}
+
+.darkmodebtn i{
+  font-size: 24px;
+}
+
+
+
+@media (min-width: 380px) {
+
+  .logo h1{
+    display: block;
+  }
+  
+}
+
+@media screen and (min-width:600px) {
+  .logo{
+    padding: 5px 15px;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  
+  .nav-link{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 768px){
+
+    .nav-link{
+      display: block;
+    }
+
+    .menu{
+      display: none;
+    }
+
+    .darkmodebtn{
+        display: block;
+        margin-left: 5px;
+        margin-right: 15px;
+        font-weight: 600;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        transition: 0.2s;
+        color: var(--text-color);
+    }
+
+    .darkmodebtn i{
+      font-size: 28px;
+      padding: 0 !important;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+  nav{
+    padding: 5px 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* nav{
+  display: flex;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px  32px;
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #fff;
+}
+
+.menu{
+  display: none;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.logo h1{
+  margin-left: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+
+.linkbar{
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.linkbar:hover{
+  border-bottom: 3px solid #000;
+  padding-bottom: 2px;
+}
+
+
+
+nav .contact{
+  margin-left: 20px;
+  background-color: #000;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 12px 16px;
+  transition: 0.2s;
+}
+
+nav .contact:hover{
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+
+}
+
+
+.mobile-menu{
+  position: absolute;
+  display: none;
+  top: 60px;
+  right: 30px;
+  overflow: hidden;
+  left: 30px;
+  padding: 35px 20px;
+  background-color: #fff;
+  width: auto;
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000;
+}
+
+.mobile-menu li{
+  padding: 16px 16px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.mobile-menu a{
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.mobile-menu a:hover{
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.active{
+  padding-bottom: 5px;
+  border-bottom: 3px solid #000;
+}
+
+.active:hover{
+  border-bottom: 3px solid transparent;
+}
+
+
+
+/* Resposive Design */
+
+/*
+@media screen and (max-width: 969px) {
+
+  nav{
+    padding: 10px 30px;
+  }
+
+
+  .logo h1{
+    font-size: 25px;
+    cursor: pointer;
+
+  }
+
+  .nav-link{
+    display: block;
+  }
+
+  nav button{
+   display: none;
+  }
+
+}
+
+/*
+
+@media screen and (max-width: 768px) {
+
+  nav{
+    padding: 5px 20px;
+  }
+
+  .logo h1{
+    font-size: 25px;
+    cursor: pointer;
+
+  }
+
+
+  .show-menu {
+    display: block;
+  }
+  
+
+  .menu{
+    display: block;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+  nav button{
+    display: none;
+   }
+  
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (max-width: 348px) {
+
+  nav{
+    padding: 5px 10px;
+  }
+
+  .mobile-menu li{
+    padding: 15px 15px;
+  }
+
+  .logo h1{
+    display: none;
+  }
+
+}
+*/
+
