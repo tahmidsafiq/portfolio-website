@@ -47,7 +47,7 @@
 .project1 .img-up{
   background-size: cover;
   background-position: top;
-  transition: ease-in-out 10s;
+  transition: ease-in-out 5s;
 }
 
 .project1 .img-up:hover{
@@ -61,9 +61,11 @@
  font-family: 'Poppins', sans-serif;
 }
 
+
 .project-info p{
   font-size: 17px;
   padding: 0 5px;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
@@ -103,7 +105,7 @@
   scale: 1.1;
 }
 
-.code-btn button i{
+.code-btn a i{
   margin-right: 8px;
 }
 
@@ -133,6 +135,12 @@
   }
  }
 
+ @media screen and (max-width: 990px) {
+  .project-info{
+    text-align: center;
+  }
+ }
+
  @media screen and (min-width:992px) {
 
   .portfolio{
@@ -145,6 +153,10 @@
     justify-content: center;
     gap: 10px;
     margin: 50px 0;
+  }
+
+  .project2{
+    flex-direction: row-reverse;
   }
 
   .project-image{
@@ -176,7 +188,7 @@
     padding: 0 120px;
     margin-bottom: 70px;
   }
-  
+
 }
 
 

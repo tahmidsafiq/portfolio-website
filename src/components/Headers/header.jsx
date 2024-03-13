@@ -3,10 +3,10 @@ import '../Headers/header.css';
 
 const Header = ({ darkMode, toggleDarkMode }) => {
 
-  const [imageSrc, setImageSrc] = useState('/src/assets/images/profile.jpg');
+  const [imageSrc, setImageSrc] = useState('https://i.postimg.cc/nrpM80Bs/profile.jpg');
 
   const handleImageClick = () => {
-    const newImageSrc = imageSrc === '/src/assets/images/profile.jpg' ? '/src/assets/images/colorFull.png' : '/src/assets/images/profile.jpg';
+    const newImageSrc = imageSrc === 'https://i.postimg.cc/nrpM80Bs/profile.jpg' ? 'https://i.postimg.cc/xTjqtp9h/color-Full.png' : 'https://i.postimg.cc/nrpM80Bs/profile.jpg';
     setImageSrc(newImageSrc);
   };
 
