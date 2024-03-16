@@ -44,7 +44,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <Link data-scroll-to="experience" activeClass='active' to="experience" spy={true} smooth={true} offset={-550} duration={500} className='linkbar'>Home</Link>
         <Link data-scroll-to="about" activeClass='active' to="about" spy={true} smooth={true} offset={-15} duration={500} className='linkbar'>About</Link>
         <Link data-scroll-to="portfolio" activeClass='active' to="portfolio" spy={true} smooth={true} offset={-100} duration={500} className='linkbar'>Project</Link>
-        <Link data-scroll-to="contact" activeClass='active' to="contact" spy={true} smooth={true} offset={80} duration={500} className='linkbar'>Contact</Link>
+        <Link data-scroll-to="contact" activeClass='active' to="contact" spy={true} smooth={true} offset={1400} duration={500} className='linkbar'>Contact</Link>
       </div>
       <span className='darkmodebtn' onClick={toggleDarkMode}>
         {darkMode ? <i className="fa-solid fa-sun"></i> : <i className="fa-solid fa-moon"></i>}
