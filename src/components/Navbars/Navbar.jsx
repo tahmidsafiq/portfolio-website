@@ -1,10 +1,8 @@
-// Navbar.js
 
 import React, { useEffect } from 'react';
-import '../Navbars/Navbar';
+import './nav.css';
 import Logo from '../Logos/logo';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import Navbar from './Navbar';
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   useEffect(() => {
