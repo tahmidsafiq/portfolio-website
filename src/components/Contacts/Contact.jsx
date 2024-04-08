@@ -6,7 +6,7 @@ const Contact = () => {
     <div className='contact-info'>
       <h1 id='contact'>Contact</h1>
       <p>If you don't hire me, no problem. But if you have enough time then <br/> please give a feedback so that I can improve next time.</p>
-      <h3>Get in tough <i class="fa-solid fa-caret-down"></i></h3>
+      <h3>Get in touch <i class="fa-solid fa-caret-down"></i></h3>
       <div className='meassge'>
         <div className='email'>
         <h2><i class="fa-regular fa-envelope"></i> Email</h2>

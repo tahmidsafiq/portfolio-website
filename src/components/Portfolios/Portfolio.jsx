@@ -81,25 +81,9 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
        </div>
       </div>
 
-    
-      <div className='project1'>
-      <div className='project-image img-up' style={{backgroundImage: `URL(https://i.postimg.cc/MWD26XB1/portfolio.png)`}}>
-       </div>
-       <div className='project-info'>
-       <h2>My Portfolio Website</h2>
-       <p>I am presenting, this is My unique simple portfolio website with CSS and React.js, featuring a dynamic eyes moving logo. Showcase my skills, projects, and achievements elegantly, while offering users a seamless transition between light and dark themes for enhanced viewing experience.</p>
-       <div className='tech-item'>
-       <span>#CSS</span>
-       <span>#React Js</span>
-       </div> 
-       <div className='code-btn'>
-       <a href='https://github.com/tahmidsafiq/portfolio-website'><button><i class="fa-brands fa-github"></i>Code</button></a>
-       <a href='https://tahmidsafiq.netlify.app/' id="contact"><button>Live Demo</button></a>
-       </div>
-       </div>
-      </div>
+  
 
-      <div className='project1 project2'>
+      <div className='project1'>
       <div className='project-image img-up' style={{backgroundImage: `URL(https://i.postimg.cc/bNPRYDv1/ts-random-quote-creator.png)`}}>
        </div>
        <div className='project-info'>
