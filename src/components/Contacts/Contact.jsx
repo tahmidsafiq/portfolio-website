@@ -10,7 +10,7 @@ const Contact = () => {
       <div className='meassge'>
         <div className='email'>
         <h2><i class="fa-regular fa-envelope"></i> Email</h2>
-        <a href="mailto:web.tahmidsafiq@gmail.com?subject=Subject%20Here&body=Message%20Here" target="_blank">web.tahmidsafiq@gmail.com</a>
+        <a href="mailto:web.tahmid.safiq@gmail.com?subject=Subject%20Here&body=Message%20Here" target="_blank">web.tahmid.safiq@gmail.com</a>
         </div>
         <div className='email'>
         <h2><i class="fa-brands fa-facebook-messenger"></i> Messenger</h2>
