@@ -40,7 +40,7 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
        </div>
        <div className='code-btn'>
        <a href='https://github.com/tahmidsafiq/realtime-chat-application'><button><i class="fa-brands fa-github"></i>Code</button></a>
-       <a href='ts-realtime-chat-application.vercel.app'><button>Live Demo</button></a>
+       <a href='https://ts-realtime-chat-application.vercel.app/'><button>Live Demo</button></a>
        </div>
        </div>
       </div>
